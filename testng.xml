@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" verbose="1">
+    <test name="Regression">
+        <classes>
+            <class name="sng.tests.CreateAccountTests"/>
+            <class name="sng.tests.LoginTests"/>
+            <class name="sng.tests.AddressTests"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="sng.testutils.testnglisteners.TestListener"></listener>
+        <listener class-name="sng.testutils.testnglisteners.SuiteListener"></listener>
+    </listeners>
+</suite>
